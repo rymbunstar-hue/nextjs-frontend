@@ -62,7 +62,7 @@ export default function QuizResult({ params }) {
           </div>
           
           <p className="text-lg font-medium text-white italic mb-8">
-            "{motivation}"
+            &quot;{motivation}&quot;
           </p>
           
           <Link href="/">
