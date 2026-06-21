@@ -47,6 +47,7 @@ export default function QuizResult({ params }) {
       <div className="max-w-md w-full text-center space-y-8">
         
         <div className="bg-card p-10 rounded-3xl shadow-2xl shadow-primary/20 border border-primary/20 flex flex-col items-center">
+          <img src="/logo.png" alt="Sahoot! Logo" className="h-16 object-contain mb-6" />
           <div className={`w-24 h-24 rounded-full flex items-center justify-center mb-6 bg-opacity-10 ${percentage >= 60 ? 'bg-green-500 text-green-500' : 'bg-red-500 text-red-500'}`}>
             <Trophy size={48} />
           </div>

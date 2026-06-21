@@ -33,7 +33,8 @@ export default function AdminLogin() {
   return (
     <div className="min-h-screen bg-card flex flex-col items-center justify-center p-4">
       <div className="w-full max-w-md">
-        <div className="text-center mb-8">
+        <div className="text-center mb-8 flex flex-col items-center">
+          <img src="/logo.png" alt="Sahoot! Logo" className="h-20 object-contain mb-4" />
           <h1 className="text-3xl font-bold text-white mb-2">Admin Kuis</h1>
           <p className="text-muted">{isLogin ? "Masuk untuk kelola kuis" : "Daftar akun admin baru"}</p>
         </div>

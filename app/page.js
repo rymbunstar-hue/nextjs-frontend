@@ -17,7 +17,8 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-card flex flex-col items-center justify-center p-4">
       <div className="w-full max-w-md text-center space-y-8">
-        <div>
+        <div className="flex flex-col items-center">
+          <img src="/logo.png" alt="Sahoot! Logo" className="h-28 object-contain mb-4" />
           <h1 className="text-4xl font-bold text-white mb-2">Sahoot!</h1>
           <h2 className="text-xl font-semibold text-white">WELCOME TO QUIZ ONLINE</h2>
         </div>

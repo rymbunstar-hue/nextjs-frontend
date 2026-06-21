@@ -76,10 +76,11 @@ export default function QuizTake({ params }) {
     // Welcome Screen
     return (
       <div className="min-h-screen bg-background flex items-center justify-center p-4">
-        <div className="max-w-md w-full bg-card p-8 rounded-2xl shadow-2xl shadow-primary/10 border border-primary/20 text-center space-y-6">
-          <h1 className="text-3xl font-bold text-white">{quiz.title}</h1>
-          {quiz.description && <p className="text-white">{quiz.description}</p>}
-          <div className="pt-4 border-t border-primary/20">
+        <div className="max-w-md w-full bg-card p-8 rounded-2xl shadow-2xl shadow-primary/10 border border-primary/20 text-center space-y-6 flex flex-col items-center">
+          <img src="/logo.png" alt="Sahoot! Logo" className="h-20 object-contain mb-2" />
+          <h1 className="text-3xl font-bold text-white w-full">{quiz.title}</h1>
+          {quiz.description && <p className="text-white w-full">{quiz.description}</p>}
+          <div className="pt-4 border-t border-primary/20 w-full">
             <p className="text-sm text-muted mb-6">Total Pertanyaan: {quiz.questions.length}</p>
             <button
               onClick={handleStart}
@@ -100,6 +101,7 @@ export default function QuizTake({ params }) {
   return (
     <div className="min-h-screen bg-background flex flex-col items-center justify-center p-4">
       <div className="w-full max-w-[800px]">
+
         <div className="mb-6 flex justify-between items-center px-4">
           <span className="text-sm font-semibold text-muted">Pertanyaan {currentQuestionIndex + 1} dari {quiz.questions.length}</span>
           <div className="w-1/2 bg-input rounded-full h-2.5">

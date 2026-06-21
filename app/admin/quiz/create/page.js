@@ -72,7 +72,10 @@ export default function CreateQuiz() {
         </Link>
         
         <div className="bg-card p-8 rounded-2xl shadow-2xl shadow-primary/10 border border-primary/20">
-          <h1 className="text-2xl font-bold text-white mb-6">Buat Kuis Baru</h1>
+          <div className="flex justify-between items-center mb-6">
+            <h1 className="text-2xl font-bold text-white">Buat Kuis Baru</h1>
+            <img src="/logo.png" alt="Sahoot! Logo" className="h-10 object-contain" />
+          </div>
           
           {error && <div className="bg-red-50 text-red-500 p-4 rounded-lg mb-6">{error}</div>}
           
@@ -85,7 +88,7 @@ export default function CreateQuiz() {
                   value={title}
                   onChange={(e) => setTitle(e.target.value)}
                   placeholder="Contoh: Kuis Matematika Dasar"
-                  className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
+                  className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary text-black"
                   required
                 />
               </div>
@@ -95,7 +98,7 @@ export default function CreateQuiz() {
                   value={description}
                   onChange={(e) => setDescription(e.target.value)}
                   placeholder="Deskripsi singkat kuis..."
-                  className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary h-24 resize-none"
+                  className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary h-24 resize-none text-black"
                 />
               </div>
             </div>
@@ -122,7 +125,7 @@ export default function CreateQuiz() {
                       placeholder="Tulis pertanyaan di sini..."
                       value={q.question_text}
                       onChange={(e) => handleQuestionChange(index, 'question_text', e.target.value)}
-                      className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
+                      className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary text-black"
                       required
                     />
                     
