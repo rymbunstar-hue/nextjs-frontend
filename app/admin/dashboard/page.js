@@ -51,7 +51,7 @@ export default function AdminDashboard() {
 
   return (
     <div className="min-h-screen bg-background pb-10">
-      <nav className="bg-card shadow-sm border-b px-6 py-4 flex justify-between items-center">
+      <nav className="bg-card shadow-sm border-b px-4 sm:px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
         <div className="flex items-center gap-3">
           <img src="/logo.png" alt="Sahoot! Logo" className="h-10 object-contain" />
           <h1 className="text-2xl font-bold text-primary">Sahoot! Admin</h1>
@@ -62,16 +62,16 @@ export default function AdminDashboard() {
       </nav>
 
       <div className="max-w-5xl mx-auto mt-8 px-4">
-        <div className="flex justify-between items-center mb-6">
+        <div className="flex flex-col sm:flex-row justify-between items-center mb-6 gap-4 sm:gap-0">
           <h2 className="text-xl font-bold text-white">Kelola Kuis Anda</h2>
           <Link href="/admin/quiz/create">
-            <button className="bg-primary hover:bg-primary-hover text-white font-semibold py-2 px-6 rounded-full transition-colors flex items-center gap-2">
+            <button className="bg-primary hover:bg-primary-hover text-white font-semibold py-2 px-6 rounded-full transition-colors flex items-center gap-2 w-full sm:w-auto justify-center">
               <Plus size={18} /> Buat Kuis Baru
             </button>
           </Link>
         </div>
 
-        <div className="bg-card rounded-2xl shadow-2xl shadow-primary/10 border border-primary/20 overflow-hidden">
+        <div className="bg-card rounded-2xl shadow-2xl shadow-primary/10 border border-primary/20 overflow-x-auto">
           <table className="w-full text-left border-collapse">
             <thead>
               <tr className="bg-background text-white text-sm border-b">

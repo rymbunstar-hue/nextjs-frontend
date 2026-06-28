@@ -18,9 +18,9 @@ export default function Home() {
     <div className="min-h-screen bg-card flex flex-col items-center justify-center p-4">
       <div className="w-full max-w-md text-center space-y-8">
         <div className="flex flex-col items-center">
-          <img src="/logo.png" alt="Sahoot! Logo" className="h-28 object-contain mb-4" />
-          <h1 className="text-4xl font-bold text-white mb-2">Sahoot!</h1>
-          <h2 className="text-xl font-semibold text-white">WELCOME TO QUIZ ONLINE</h2>
+          <img src="/logo.png" alt="Sahoot! Logo" className="h-20 sm:h-28 object-contain mb-4" />
+          <h1 className="text-3xl sm:text-4xl font-bold text-white mb-2">Sahoot!</h1>
+          <h2 className="text-lg sm:text-xl font-semibold text-white text-center px-2">WELCOME TO QUIZ ONLINE</h2>
         </div>
 
         <form onSubmit={handleJoin} className="bg-card p-6 rounded-2xl shadow-2xl shadow-primary/10 border border-primary/20 space-y-4">
